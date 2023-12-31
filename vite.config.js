@@ -10,7 +10,6 @@ export default defineConfig({
       output: {
         manualChunks: {
           preline: ["preline"],
-          // Autres modules spécifiques...
         },
       },
     },
