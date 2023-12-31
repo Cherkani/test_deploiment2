@@ -6,7 +6,7 @@ import AdminHome from './components/admin/AdminHome';
 import ProfHome from './components/prof/ProfHome';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
-// import Preline from "./components/Preline";
+import Preline from "./components/Preline";
 import NotFound404 from './components/auth/NotFound404'
 
 const userlogin = JSON.parse(localStorage.getItem("userlogin"))
@@ -20,7 +20,7 @@ if (userlogin !== null){
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-    
+      <Preline />
       <Routes>
         {userlogin ? (
           <>
