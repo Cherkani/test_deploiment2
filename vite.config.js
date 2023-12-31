@@ -12,6 +12,17 @@ export default defineConfig({
           preline: ["preline"],
         },
       },
+      plugins: [
+        {
+          name: "exclude-preline",
+          resolveId(id) {
+            if (id.includes("preline")) {
+              return false;
+            }
+            return null;
+          },
+        },
+      ],
     },
   },
 });
